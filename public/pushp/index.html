@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Puspa</title>
+
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/test.css">
+    <script src="https://kit.fontawesome.com/c8371491b6.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+    <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/fade-animation.css">
+</head>
+
+<body>
+    <!--========NAV BAR===============-->
+    <div class="wrapper">
+        <div class="top-bar">
+            <div class="margin-auto-width">
+                <div class="bar-information">
+                    <a class="phone-info"> <i class="fa-solid fa-phone"></i> +977 9824194545</a>
+                    <a class="address-info"><i class="fa-solid fa-location-dot"></i> Nayabazar- Pokhara, 9</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="wrapper sticky">
+
+        <div class="margin-auto-width">
+
+            <nav>
+                <input type="checkbox" id="show-search">
+                <input type="checkbox" id="show-menu">
+                <label for="show-menu" class="menu-icon"><i class="fas fa-bars"></i></label>
+                <div class="content">
+                    <div class="logo">
+                        <a href="index.html">
+                            <img src="./image/logo.png">
+                        </a>
+                    </div>
+                    <ul class="links">
+                        <label for="show-menu" class="menu-icon another-icon"><i class="fa-solid fa-xmark"></i></label>
+                        <li><a href="index.html" class="active main-anchor"><i class="fa-solid fa-house"></i></a></li>
+                        <li><a href="aboutus.html" class="main-anchor">About Us</a></li>
+                        <li>
+                            <a href="hotel-details.html" class="desktop-link main-anchor">Rooms <i class="fa-solid fa-caret-down"></i></a>
+                            <input type="checkbox" id="show-features">
+                            <label for="show-features">Features</label>
+                            <ul>
+                                <li><a href="#">Honeymoon Suite Room</a></li>
+                                <li><a href="#">Apartment Suite Room</a></li>
+                                <li><a href="#">Super Twins Room</a></li>
+                                <li><a href="#">Super Kings Room</a></li>
+                                <li><a href="#">Double Kings Room</a></li>
+                            </ul>
+                        </li>
+                        <!-- <li>
+                            <a href="#" class="desktop-link main-anchor">Services <i class="fa-solid fa-caret-down"></i></a>
+                            <input type="checkbox" id="show-services">
+                            <label for="show-services">Services</label>
+                            <ul>
+                                <li><a href="#">Drop Menu 1</a></li>
+                                <li><a href="#">Drop Menu 2</a></li>
+                                <li><a href="#">Drop Menu 3</a></li>
+                                <li>
+                                    <a href="#" class="desktop-link">More Items <i class="fa-solid fa-caret-right"></i></a>
+                                    <input type="checkbox" id="show-items">
+                                    <label for="show-items">More Items </label>
+                                    <ul>
+                                        <li><a href="#">Sub Menu 1</a></li>
+                                        <li><a href="#">Sub Menu 2</a></li>
+                                        <li><a href="#">Sub Menu 3</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li> -->
+                        <li><a href="gallery.html" class="main-anchor">Gallery</a></li>
+                        <li><a href="contactus.html" class="main-anchor"> Contact Us </a></li>
+                    </ul>
+                </div>
+                <label for="show-search" class="search-icon"><i class="fas fa-search"></i></label>
+                <form action="#" class="search-box">
+                    <input type="text" placeholder="Type Something to Search..." required>
+                    <button type="submit" class="go-icon"><i class="fas fa-long-arrow-alt-right"></i></button>
+                </form>
+            </nav>
+
+        </div>
+    </div>
+    <!--========NAV ENDS==============-->
+
+    <!--========Image SLider===============-->
+    <section class="home-slider">
+        <div class="slider-back">
+            <div class="slide active" style="background-image:  linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('./image/slide-1.jpg')">
+                <div class="slider-container">
+                    <div class="caption">
+                        <h2>Hotel Puspa</h2>
+                        <h5>Lorem ipsum dummy text goes here.</h5>
+
+                    </div>
+                </div>
+            </div>
+            <div class="slide" style="background-image:  linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('./image/slide-2.jpg')">
+                <div class="slider-container">
+                    <div class="caption">
+                        <h2>Different Rooms With Sizes</h2>
+                        <h5>Lorem ipsum dummy text goes here.</h5>
+
+                    </div>
+                </div>
+            </div>
+            <div class="slide" style="background-image:  linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('./image/slide-3.jpg')">
+                <div class="slider-container">
+                    <div class="caption">
+                        <h2>More Faciliteies and Services</h2>
+                        <h5>Lorem ipsum dummy text goes here.</h5>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- controls  -->
+        <div class="controls">
+            <div class="back-button"><i class="fa-solid fa-angle-left"></i></div>
+            <div class="next-button"><i class="fa-solid fa-angle-right"></i></div>
+        </div>
+
+        <!-- indicators -->
+        <div class="indicator">
+        </div>
+
+    </section>
+    <!--========Image Slider===============-->
+
+    <!--========ROOMS TYPES===============-->
+    <div class="room-section">
+        <!-- <div class="margin-auto-width" data-aos="fade-left" style="transition: 1.7s!important;"> -->
+        <div class="margin-auto-width" style="overflow-x: hidden;">
+            <div class="book-calender">
+                <form class="input-calender-form">
+                    <input type="date" name="setTodaysDate">
+                    <input type="date" name="setTodaysDate">
+                    <input type="submit" value="Book Room">
+                </form>
+                <script>
+                    window.onload = function() {
+                        var today = new Date().toISOString().split('T')[0];
+                        document.getElementsByName("setTodaysDate")[0].setAttribute('min', today);
+                    }
+                </script>
+            </div>
+
+            <div class="title-room" id="txtDate">
+                <h1>PUSPA HOTEL</h1>
+
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis, voluptates cupiditate. Atque fuga hic deleniti, maiores doloribus ea eligendi temporibus, ducimus ab odio repellendus. Necessitatibus maxime a officia officiis nobis.</p>
+            </div>
+            <div class="room-quality">
+                <div class="img-hover-zoom">
+                    <img src="./image/room/room1.jpeg">
+                    <div class="room-information">
+                        <h5>Honeymoon Suit Room</h5>
+                        <p>Room Quantity : 1</p>
+                    </div>
+                </div>
+                <div class="img-hover-zoom">
+                    <img src="./image/room/room2.jpg">
+                    <div class="room-information">
+                        <h5>King Size Room</h5>
+                        <p>Room Quantity : 1</p>
+                    </div>
+                </div>
+                <div class="img-hover-zoom">
+                    <img src="./image/room/room3.jpg">
+                    <div class="room-information">
+                        <h5>Two BedRoom</h5>
+                        <p>Room Quantity : 1</p>
+                    </div>
+                </div>
+                <div class="img-hover-zoom">
+                    <img src="./image/room/room4.jpg">
+                    <div class="room-information">
+                        <h5>Apartment Suit Room</h5>
+                        <p>Room Quantity : 1</p>
+                    </div>
+                </div>
+                <div class="img-hover-zoom">
+                    <img src="./image/room/room5.jpg">
+                    <div class="room-information">
+                        <h5>Super Size Room</h5>
+                        <p>Room Quantity : 1</p>
+                    </div>
+                </div>
+                <div class="img-hover-zoom">
+                    <img src="./image/room/room2.jpg">
+                    <div class="room-information">
+                        <h5>Triple BedRoom</h5>
+                        <p>Room Quantity : 1</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--========ROOMS TYPES ENDS===============-->
+
+    <!--========ABOUT US===============-->
+    <div class="section">
+        <!-- <div class="margin-auto-width" data-aos="fade-right" style="transition: 1.7s!important;"> -->
+        <div class="margin-auto-width">
+            <div class="container">
+                <div class="contentabout">
+                    <div class="title-about">
+                        <h1>About Us</h1>
+
+                    </div>
+                    <div class="content-aboutus">
+
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            laboris nisi ut aliquip ex ea commodo consequat laboris nisi ut aliquip ex ea commodo consequat.
+                        </p>
+
+                    </div>
+                    <div class="social-aboutus">
+                        <a href=""><i class="fab fa-facebook-f" style="padding: 0px 10px 0px 0px;"></i></a>
+                        <a href=""><i class="fab fa-twitter"></i></a>
+                        <a href=""><i class="fab fa-instagram"></i></a>
+                    </div>
+                    <a href="./aboutus.htmls"><button class="read-more-btn"> Read More...</button></a>
+                </div>
+                <div class="aboutus-image">
+                    <img src="image/img one.jpg">
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!--========ABOUT US ENDS===============-->
+
+    <!--========SERVICES===============-->
+    <div class="section bg-black">
+        <!-- <div class="margin-auto-width" data-aos="fade-left" style="transition: 1.7s!important;"> -->
+        <div class="margin-auto-width">
+            <div class="service-cont">
+                <div class="services-images">
+                    <div class="service-img-1">
+                        <img src="./image/serv1.jpg" alt="">
+                    </div>
+                    <div class="service-img-2">
+                        <div class="sub-image">
+                            <img src="./image/serv2.jpg" alt="">
+                        </div>
+                        <div class="sub-image">
+                            <img src="./image/serv3.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="services-icons">
+                    <div class="services-heading">
+                        <h1>SERVICES & FACILITIES</h1>
+
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut provident vel fuga nostrum reiciendis distinctio, impedit praesentium cumque nulla maiores quibusdam architecto dolore numquam labore Voluptas dolore numquam labore Voluptas.
+                        </p>
+                    </div>
+                    <div class="icons-serv">
+                        <div class="ico-ser">
+                            <i class="ri-time-line"></i> <span>24 hrs Security</span>
+                        </div>
+                        <div class="ico-ser">
+                            <i class="fa-solid fa-leaf"></i> <span>Garden</span>
+                        </div>
+                        <div class="ico-ser">
+                            <i class="fa-solid fa-wifi"></i><span>High Speed Wifi</span>
+                        </div>
+                        <div class="ico-ser">
+                            <i class="fa-solid fa-martini-glass"></i><span>Bar</span>
+                        </div>
+                        <div class="ico-ser">
+                            <i class="fa-solid fa-square-parking"></i><span>Parking Spot</span>
+                        </div>
+                        <div class="ico-ser">
+                            <i class="fa-solid fa-spa"></i><span> Spa</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--========SERVICES ENDS HERE===============-->
+
+    <!--========TESTOMONIALS STARTS===============-->
+    <div class="test-container">
+        <!-- <div class="testimonial mySwiper" data-aos="fade-right" style="transition: 1.7s!important;"> -->
+        <div class="testimonial mySwiper">
+            <div class="testi-content swiper-wrapper">
+                <div class="slide swiper-slide">
+                    <img src="image/img1.jpg" alt="" class="image" />
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, saepe provident dolorem a quaerat quo error facere nihil deleniti eligendi ipsum adipisci, fugit, architecto amet asperiores doloremque deserunt eum nemo.
+                    </p>
+
+                    <i class="bx bxs-quote-alt-left quote-icon"></i>
+
+                    <div class="details">
+                        <span class="name">Marnie Lotter</span>
+                        <span class="job">Web Developer</span>
+                    </div>
+                </div>
+                <div class="slide swiper-slide">
+                    <img src="image/img2.jpg" alt="" class="image" />
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, saepe provident dolorem a quaerat quo error facere nihil deleniti eligendi ipsum adipisci, fugit, architecto amet asperiores doloremque deserunt eum nemo.
+                    </p>
+
+                    <i class="bx bxs-quote-alt-left quote-icon"></i>
+
+                    <div class="details">
+                        <span class="name">Marnie Lotter</span>
+                        <span class="job">Web Developer</span>
+                    </div>
+                </div>
+                <div class="slide swiper-slide">
+                    <img src="image/img3.jpg" alt="" class="image" />
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, saepe provident dolorem a quaerat quo error facere nihil deleniti eligendi ipsum adipisci, fugit, architecto amet asperiores doloremque deserunt eum nemo.
+                    </p>
+
+                    <i class="bx bxs-quote-alt-left quote-icon"></i>
+
+                    <div class="details">
+                        <span class="name">Marnie Lotter</span>
+                        <span class="job">Web Developer</span>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next nav-btn"></div>
+            <div class="swiper-button-prev nav-btn"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+    <!--========TESTOMONIALS ENDS===============-->
+
+    <!--=======FOOTER STARTS HERE===============-->
+    <div class="footer">
+        <div class="whole-footer">
+            <div class="top-footer">
+                <div class="margin-auto-width">
+                    <div class="service-cont">
+                        <div class="logo">
+                            <a href="#">
+                                <img src="./image/logo.png">
+                            </a>
+                        </div>
+                        <div class="footer-icons">
+                            <div class="f-icon">
+                                <i class="fab fa-facebook-f"></i>
+                            </div>
+                            <div class="f-icon">
+                                <i class="fab fa-twitter"></i>
+                            </div>
+                            <div class="f-icon">
+                                <i class="fab fa-instagram"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mid-footer">
+                <div class="margin-auto-width">
+                    <div class="service-cont fot-cont-colm">
+                        <div class="fot-col">
+                            <div class="col-head">
+                                <h3>
+                                    About Puspa
+                                </h3>
+                            </div>
+                            <div class="fot-par">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt esse nesciunt reprehenderit aperiam magni veritatis illo facilis nam distinctio, optio tempore laboriosam fugiat itaque nemo sint quam neque! Eveniet, fugiat.</p>
+                            </div>
+                        </div>
+                        <div class="fot-col col-new">
+                            <div class=" col-head ">
+                                <h3>
+                                    Quick Links
+                                </h3>
+                            </div>
+                            <div class="fot-par">
+                                <ul>
+                                    <a href="">
+                                        <li>Home</li>
+                                    </a>
+                                    <a href="">
+                                        <li>Rooms</li>
+                                    </a>
+                                    <a href="">
+                                        <li>Contact Us</li>
+                                    </a>
+                                    <a href="">
+                                        <li>Services</li>
+                                    </a>
+                                </ul>
+                            </div>
+
+                        </div>
+                        <div class="fot-col col-new">
+                            <div class=" col-head ">
+                                <h3>
+                                    Room Types
+                                </h3>
+                            </div>
+                            <div class="fot-par">
+                                <ul>
+                                    <a href="">
+                                        <li>Honeymoon Suit Room</li>
+                                    </a>
+                                    <a href="">
+                                        <li>Apartment Suit Room</li>
+                                    </a>
+                                    <a href="">
+                                        <li>Super Twins Room</li>
+                                    </a>
+                                    <a href="">
+                                        <li>Super Kings Room</li>
+                                    </a>
+                                    <a href="">
+                                        <li>Double Kings Room</li>
+                                    </a>
+
+                                </ul>
+                            </div>
+
+                        </div>
+                        <div class="fot-col col-new">
+                            <div class=" col-head ">
+                                <h3>
+                                    Help & Support
+                                </h3>
+                            </div>
+                            <div class="fot-par">
+                                <ul>
+                                    <li> Call Us : +977 9824194343</li>
+                                    <li>Address : Nayabazar - 09, Pokhara</li>
+                                    <li>Email Address : info@gmail.com</li>
+
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bottom-footer">
+                <div class="margin-auto-width">
+                    <div class="service-cont">
+                        <p>© 2022 Puspa. All rights reserved | Designed & Developed by <a href="">Tuki Soft</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--=======FOOTER END HERE===============-->
+
+
+    <script src="./javascript/swiper-bundle.min.js"></script>
+    <script src="./javascript/script.js"></script>
+    <script src="./javascript/photoslider.js"></script>
+    <script src="javascript/fad-animation.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+</body>
+
+
+
+</html>
